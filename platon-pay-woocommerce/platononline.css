@@ -1,0 +1,58 @@
+.payment_method_platononline label {
+	display: inline-block !important;
+	width: 100% !important;
+	font-size: 0 !important;
+	margin: 15px 0 !important;
+}
+.woocommerce-checkout-payment .text-payment-platon {
+	display: none;
+}
+label[for="payment_method_platononline"] {
+	display: flex !important;
+    position: relative;
+    flex-wrap:wrap  !important;
+}
+label[for="payment_method_platononline"] img {
+	max-height: 30px !important;
+	float:none !important;
+	margin: 0 2px  10px 2px  !important;
+}
+label[for="payment_method_platononline"] .doneby {
+	margin-left: auto !important;
+}
+body .wc_payment_method input.input-radio[name=payment_method] {
+    display: none;
+}
+body .wc_payment_method input.input-radio[name=payment_method]+label::before {
+    content: "" ;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #000;
+    background: #fff;
+    margin-left: 4px;
+    margin-right: .5em;
+    border-radius: 100%;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+body .wc_payment_method input.input-radio[name=payment_method]:checked+label::before {
+    background: #000;
+}
+
+@media screen and (max-width:767px) {
+	label[for="payment_method_platononline"] img {
+		max-height: 27px !important;
+		float:none !important;
+	}
+	label[for="payment_method_platononline"] .doneby {
+		max-width: initial !important;
+		max-height: 40px !important;
+	    flex-basis: 100%;
+	    margin-right: 0 !important;
+	    margin-left: 0 !important;
+	}
+
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*new*/
+.platon_connect{
+	height: 40px;
+	border:1px solid #F17F3A;
+	border-radius: 5px;
+	padding: 0 15px;
+	background: #F5A741;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s;
+	margin: 10px 0;
+}
+.platon_connect:hover{
+	background: #F17F3A;
+}
+#woocommerce_platononline_test_mode_info{
+	min-height: 115px;
+}
+#woocommerce_platononline_test_mode_info.hidden{
+	display: none;
+}
+
+.platon-popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 350px;
+  z-index: 10;
+  background: white;
+  padding: 10px;
+  border: 10px solid #E4E4E4;
+  box-shadow:0 0 15px rgba(0,0,0,0.2);
+  display: none;
+}
+.platon-popup .closer{
+	text-align: right;
+	position: relative;
+}
+.platon-popup .closer span{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 16px;
+	cursor: pointer;
+  z-index: 5;
+}
+.platon-popup h3{
+  text-align: center;
+  color: #EB9955;
+  margin: 10px 0 15px;
+  font-size: 25px;
+}
+.platon-popup input[type=text], .platon-popup input[type=email]{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-color: #E4E4E4;
+  box-shadow: none!important;
+}
+#succ{
+  text-align: center;
+  font-size: 16px;
+  color: green;
+  margin: 0!important;
+  padding: 15px 0;
+  display: none;
+}
+.platon-popup .line{
+  margin-bottom: 10px;
+  display: block;
+}
+.platon-popup input[type="radio"]{
+  border:2px solid #EB9955;
+  box-shadow:  none;
+  margin-right: 15px;
+  position: relative;
+}
+
+.platon-popup input[type="radio"]:checked::before{
+  background: #EB9955!important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  float: none;
+}
+.platon-popup button{
+	width: 100%;
+	height: 40px;
+	color: white;
+	background: linear-gradient(to right,#F49D47, #D3643D);
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.platon-popup button:hover{
+	background: linear-gradient(to left,#F49D47, #D3643D);
+}
+#platon-form{
+	margin: 0!important;
+	position: relative;
+}
+
+
+.load:before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+}
+.load:after{
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border:2px solid white;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+/*new end*/
+
